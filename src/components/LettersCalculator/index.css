@@ -1,0 +1,87 @@
+/* Write your code here. */
+.bg {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    .bg {
+        flex-direction: column;
+    }
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+    .calculator {
+        order: 1;
+    }
+}
+
+.heading {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 40px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.instructions {
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'Roboto';
+  margin-bottom: 5px;
+}
+
+.input {
+  border-radius: 5px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  width: 80%;
+  height: 30px;
+  color: #ffffff;
+}
+
+.counter {
+  background-color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 24px;
+  color: #1d976c;
+  border: none;
+  outline: none;
+  max-width: 220px;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .image-container {
+        order: 0;
+    }
+}
+
+.image {
+    width: 50%;
+}
