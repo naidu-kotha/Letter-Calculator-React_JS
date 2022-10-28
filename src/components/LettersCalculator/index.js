@@ -3,20 +3,18 @@ import {Component} from 'react'
 import './index.css'
 
 class LettersCalculator extends Component {
-  state = {count: 0, input: ''}
+  state = {input: ''}
 
   countDigit = event => {
     this.setState({input: event.target.value})
-    this.setState(prevState => ({count: prevState.count + 1}))
   }
 
   resetCount = () => {
-    this.setState({count: 0})
     this.setState({input: ''})
   }
 
   render() {
-    const {count, input} = this.state
+    const {input} = this.state
 
     return (
       <div className="bg">
@@ -36,7 +34,7 @@ class LettersCalculator extends Component {
             />
           </div>
           <p className="counter" onClick={this.resetCount}>
-            No.of letters: {count}
+            {input.length}
           </p>
         </div>
         <div className="image-container">
