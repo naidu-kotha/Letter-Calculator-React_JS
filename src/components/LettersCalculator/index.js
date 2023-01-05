@@ -34,7 +34,7 @@ class LettersCalculator extends Component {
             />
           </div>
           <p className="counter" onClick={this.resetCount}>
-            {input.length}
+            No.of letters: {input.length}
           </p>
         </div>
         <div className="image-container">
